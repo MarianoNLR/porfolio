@@ -1,0 +1,139 @@
+:root {
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+}
+
+.encabezado {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(3px);
+}
+
+.navegacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.navegacion__titulo  {
+    margin-left: 10px;
+    font-size: 3.5rem;
+}
+
+.navegacion__enlace {
+    text-decoration: none;
+}
+
+.enlaces {
+    display: flex;
+    margin-right: 10px;
+    gap: 5rem;
+    font-size: 1.5rem;
+}
+
+.enlaces__item {
+    list-style: none;
+}
+
+.enlaces__enlace {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.principal {
+    width: 100%;
+}
+
+.presentacion__contenedor {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.presentacion {
+    background-image: url('./assets/images/presentacion-fondo.jpg');
+    background-size: cover;
+    color: aliceblue;
+    min-height: 100vh;
+}
+
+.presentacion__titulo {
+    font-size: 5rem;
+}
+
+.presentacion__parrafo {
+    font-size: 3rem;
+}
+
+.presentacion__contenedor_botones {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.boton {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Footer */
+.pie_de_pagina {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pie_de_pagina__columna .enlaces_vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pie_de_pagina__titulo_columna {
+    font-size: 1.5rem;
+}
+
+.enlaces__enlace_footer {
+    font-size: 1.3rem;
+}
+
+.pie_de_pagina__copyright {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    
+}
+
+.divisor {
+    height: 1px;
+    flex-basis: 100%;
+    background-color: gray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
