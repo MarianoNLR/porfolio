@@ -1,4 +1,5 @@
 :root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
 }
 
@@ -62,7 +63,7 @@ body {
 
 .principal {
     width: 100%;
-    
+    min-width: 100vh;
 }
 
 .presentacion__contenedor {
@@ -101,11 +102,20 @@ body {
 
 .boton {
     text-decoration: none;
-    background-color: black;
+    background-color: #5ccb5f;
     color: white;
     padding: 10px;
     font-size: 2rem;
     font-weight: 600;
+    border-radius: 50px;
+    transition: box-shadow 0.3s linear;
+}
+
+.boton:hover,
+.boton:focus {
+    box-shadow: 0px 0px 19px 3px rgba(92,203,95,0.75);
+-webkit-box-shadow: 0px 0px 19px 3px rgba(92,203,95,0.75);
+-moz-box-shadow: 0px 0px 19px 3px rgba(92,203,95,0.75);
 }
 
 /*Principal Sobre mi*/
@@ -166,6 +176,7 @@ body {
     box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
 -webkit-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 18px -1px rgba(0,0,0,0.75);
+font-size: 2rem;
 }
 
 .mi-historia {
@@ -299,6 +310,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    font-size: 1.2rem;
     gap: 10px;
     backdrop-filter: blur(4px);
     opacity: 0;
@@ -317,11 +329,6 @@ body {
     transition: all 0.5s ease;
 }
 
-.tarjeta__imagen:hover,
-.tarjeta__imagen:focus {
-    
-}
-
 .tarjeta__contenido .boton {
     align-self: flex-end;
 }
@@ -332,11 +339,12 @@ body {
     padding: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
     background-color: black;
     color: white;
     border-top: 1px solid white;
+    min-width: 100vh;
 }
 
 .pie_de_pagina__columna .enlaces_vertical {
@@ -355,14 +363,23 @@ body {
     width: 30px;
 }
 
+.enlaces__enlace:hover {
+    color: gray;
+}
+
 .enlaces__icono {
     width: 30px;
     height: 30px;
     filter: drop-shadow(0px 0px 5px white);
 }
 
+.enlaces__icono:hover,
+.enlaces__icono:focus {
+    transform: scale(1.2);
+}
+
 .enlaces_redes {
-    gap: 10px;
+    gap: 20px;
 }
 
 .pie_de_pagina__copyright {
@@ -380,4 +397,53 @@ body {
     background-color: gray;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+/*Media queries*/
+
+@media (max-width: 1000px) {
+    .contenedor__tarjetas__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .navegacion {
+        flex-direction: column;
+    }
+
+    .encabezado .enlaces {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .contenedor__tarjetas__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .articulo__contenedor_descripciones {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .mi-historia {
+        border-radius: 20px;
+    }
+
+    .hobbies {
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .pie_de_pagina {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+        gap: 2rem;
+    }
+
+    .enlaces_redes {
+        justify-content: center;
+    }
 }
