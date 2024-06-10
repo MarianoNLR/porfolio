@@ -13,6 +13,9 @@
 body {
     position: relative;
     min-height: 100%;
+    scrollbar-width: auto;
+    scrollbar-color: gray transparent;
+
 }
 
 .encabezado {
@@ -310,11 +313,12 @@ font-size: 2rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    font-size: 1.2rem;
+    font-size: 1rem;
     gap: 10px;
     backdrop-filter: blur(4px);
     opacity: 0;
     transition: opacity 0.5s ease;
+    overflow-x: auto;
 }
 
 .tarjeta__contenido:hover,
@@ -339,7 +343,7 @@ font-size: 2rem;
     padding: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
     color: white;
