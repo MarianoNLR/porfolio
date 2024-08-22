@@ -164,6 +164,11 @@ body {
 
 /*Principal Sobre mi*/
 
+.seccion_sobre-mi {
+    background-image: linear-gradient(to right bottom, #004c14, #005115, #005515, #005a16, #005f16, #005c15, #005815, #005514, #004812, #003c10, #00300c, #002506);
+    overflow-x: hidden;
+}
+
 .seccion_descripcion_contenido {
     display: flex;
     justify-content: center;
@@ -304,20 +309,19 @@ body {
     min-height: 100vh;
     width: 100vw;
     gap: 2rem;
-    background: black;
     font-size: 2rem;
     color: white;
 }
 
 .mi-historia {
-    background-image: linear-gradient(to bottom, #00460f, #00460f, #00460f, #00460f, #00460f);
+
     color: rgb(255, 255, 255);
     justify-content: flex-start;
 }
 
 .hobbies {
     /* background-image: linear-gradient(to bottom, #002508, #002508, #002508, #002508, #002508); */
-    background-image: linear-gradient(to bottom, #00460f, #00460f, #00460f, #00460f, #00460f);
+
     justify-content: flex-end;
 }
 
@@ -395,7 +399,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, #00460f, #00460f, #00460f, #00460f, #00460f);
+    background-image: linear-gradient(to left bottom, #00290b, #01260b, #02230a, #022109, #011e08, #011d07, #001b07, #001a06, #001a06, #001a05, #001a05, #001a04);
     color: #343434;
 }
 
@@ -467,7 +471,7 @@ color: white;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 100%;
-    background-color: #0c1b0f;
+    background-color: #001A04;
     color: white;
 }
 
