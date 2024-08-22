@@ -12,7 +12,15 @@
             <a class="navegacion__enlace" href="#presentacion"><h2 class="navegacion__titulo">MNLR</h2></a>
             <ul class="enlaces">
                 <li class="enlaces__item"><a href="#" class="enlaces__enlace">Presentacion</a></li>
-                <li class="enlaces__item"><a href="#sobre-mi" class="enlaces__enlace">Sobre Mi</a></li>
+
+                <li class="enlaces__item">
+                  <a href="#historia" class="enlaces__enlace">Sobre Mi</a>
+                  <ul class="sobre-mi_menu">
+                    <li class="enlaces__item"><a href="#historia" class="enlaces__enlace">Historia</a></li>
+                  <li class="enlaces__item"><a href="#hobbies" class="enlaces__enlace">Hobbies</a></li>
+                  </ul>
+                </li>
+
                 <li class="enlaces__item"><a href="#proyectos" class="enlaces__enlace">Proyectos</a></li>
             </ul>
         </nav>
@@ -26,20 +34,20 @@
                 Bienvenido a mi Portfolio, donde podrás conocer un poco más sobre mi y los proyectos que he realizado.</p>
               </div>
               <div class="presentacion__contenedor_botones">
-                    <a href="#sobre-mi" class="boton" role="button">Sobre mi</a>
-                    <a 
+                    <a href="#sobre-mi" class="boton" role="button"><span class="presentacion__contenedor_botones_texto">Sobre mi</span></a>
+                    <a
                     href="./assets/docs/cv.pdf"
                     target="_blank"
                     class="boton"
                     role="button"
-                    >Descargar CV</a>
+                    ><span class="presentacion__contenedor_botones_texto">Descargar CV</span></a>
               </div>
             </div>
         </section>
-        <article class="articulo sobre-mi" id="sobre-mi">
-          <h2 class="articulo__titulo">Un poco sobre mi</h2>
-        <div class="articulo__contenedor_descripciones">
-          <section class="seccion_descripcion mi-historia">
+        <article class="articulo mi-historia seccion_descripcion" id="historia">
+          <div class="seccion_descripcion_contenido">
+            <div class="linea-horizontal-arriba"></div>
+            <div class="linea-vertical-arriba"></div>
             <div class="seccion_descripcion__porta_retrato">
               <img
                 class="seccion_descripcion__imagen"
@@ -75,10 +83,16 @@
               tales como Django, React, Spring, Express. 
               </p>
             </div>
-          </section>
-          <section class="seccion_descripcion hobbies">
+            <div class="linea-horizontal-abajo"></div>
+            <div class="linea-vertical-abajo"></div>
+          </div>
+          </article>
+        <article class="articulo hobbies seccion_descripcion" id="hobbies"> 
+          <div class="seccion_descripcion_contenido">
+            <div class="linea-horizontal-arriba linea-color-alternativo"></div>
+            <div class="linea-vertical-arriba linea-color-alternativo"></div>
             <div
-              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris" 
               aria-label="descripcion personal"
             >
               <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
@@ -114,12 +128,15 @@
                 title="Programacion"
               />
             </div>
-          </section>
-        </div>
+            <div class="linea-horizontal-abajo linea-color-alternativo"></div>
+            <div class="linea-vertical-abajo linea-color-alternativo"></div>
+          </div>
         </article>
         <article class="articulo proyectos" id="proyectos">
           <h2 class="articulo__titulo">Mis proyectos</h2>
           <div class="contenedor__tarjetas__grid">
+            <div class="linea-horizontal-arriba"></div>
+            <div class="linea-vertical-arriba"></div>
             <div class="tarjeta" aria-label="presentacion proyecto personal">
               <img src="./assets/images/proyectos/Pomodoro.png" alt="Imagen del proyecto" class="tarjeta__imagen" title="Proyecto 1">
               <div class="tarjeta__contenido">
@@ -168,6 +185,8 @@
                 <a href="https://github.com/MarianoNLR/blog-api" class="boton" target="_blank">Ver Proyecto</a>
               </div>
             </div>
+            <div class="linea-horizontal-abajo"></div>
+            <div class="linea-vertical-abajo"></div>
           </div>
         </article>
     </main>
