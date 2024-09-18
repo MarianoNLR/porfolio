@@ -122,6 +122,17 @@ body {
     backdrop-filter: blur(5px);
     border-radius: 10px;
     color: white;
+    animation: presentacion__contenedor_info_opacity 2s ease-in;
+}
+
+@keyframes presentacion__contenedor_info_opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        
+    }
 }
 
 .presentacion__titulo {
@@ -152,7 +163,10 @@ body {
     font-size: 2rem;
     font-weight: 600;
     border-radius: 50px;
+    opacity: 0;
     transition: box-shadow 0.3s linear;
+    animation: presentacion__contenedor_info_opacity 2s ease-in forwards;
+    animation-delay: 1s;
 }
 
 .boton:hover,
@@ -165,7 +179,7 @@ body {
 /*Principal Sobre mi*/
 
 .seccion_sobre-mi {
-    background-image: linear-gradient(to right bottom, #004c14, #005115, #005515, #005a16, #005f16, #005c15, #005815, #005514, #004812, #003c10, #00300c, #002506);
+    /* background-image: linear-gradient(to right bottom, #004c14, #005115, #005515, #005a16, #005f16, #005c15, #005815, #005514, #004812, #003c10, #00300c, #002506); */
     overflow-x: hidden;
 }
 
@@ -177,6 +191,16 @@ body {
     position: relative;
     padding: 1rem;
     z-index: 1;
+    animation: seccion_descripcion_contenido_animation 2s ease-in forwards;
+}
+
+@keyframes  seccion_descripcion_contenido_animation{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .seccion_descripcion_contenido::before {
@@ -210,6 +234,7 @@ body {
 }
 
 .mi-historia {
+    background: rgb(0,0,0);background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 21%, rgba(1,9,32,1) 62%, rgba(0,12,46,1) 100%);
     display: flex;
     flex-direction: row;
 }
@@ -223,6 +248,7 @@ body {
     top: 0px;
     left: 0px;
     border-radius: 50px;
+    animation: linea_marco_parpadeo 3s linear alternate infinite;
 }
 
 .linea-vertical-arriba {
@@ -234,6 +260,7 @@ body {
     top: 0;
     left: 0;
     border-radius: 50px;
+    animation: linea_marco_parpadeo 3s linear alternate infinite;
 }
 
 .linea-horizontal-abajo {
@@ -244,6 +271,7 @@ body {
     background-color: #00ff44;
     bottom: 0;
     right: 0;
+    animation: linea_marco_parpadeo 3s linear alternate infinite;
 }
 
 .linea-vertical-abajo {
@@ -254,10 +282,20 @@ body {
     background-color: #00ff44;
     bottom: 0;
     right: 0;
+    animation: linea_marco_parpadeo 3s linear alternate infinite;
 }
 
 .linea-color-alternativo {
     background-color: rgb(255, 255, 255);
+}
+
+@keyframes linea_marco_parpadeo {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -320,8 +358,7 @@ body {
 }
 
 .hobbies {
-    /* background-image: linear-gradient(to bottom, #002508, #002508, #002508, #002508, #002508); */
-
+    background: rgb(0,0,0);background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 21%, rgba(1,9,32,1) 62%, rgba(0,12,46,1) 100%);
     justify-content: flex-end;
 }
 
@@ -399,8 +436,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to left bottom, #00290b, #01260b, #02230a, #022109, #011e08, #011d07, #001b07, #001a06, #001a06, #001a05, #001a05, #001a04);
-    color: #343434;
+    background: rgb(0,0,0);background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 21%, rgba(1,9,32,1) 62%, rgba(0,12,46,1) 100%);
 }
 
 .proyectos .articulo__titulo {
@@ -471,7 +507,7 @@ color: white;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 100%;
-    background-color: #001A04;
+    background-color: #000000;
     color: white;
 }
 
@@ -528,7 +564,7 @@ color: white;
 .divisor {
     height: 1px;
     flex-basis: 100%;
-    background-color: rgb(0, 51, 4);
+    background-color: rgb(255, 255, 255);
     margin-top: 10px;
     margin-bottom: 10px;
 }
